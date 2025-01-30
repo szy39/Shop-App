@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import ProductPage from './components/ProductPage'
-function App() {
+import { useState } from "react";
+import NavBar from "./components/NavBar";
+import ProductPage from "./components/ProductPage";
 
-  
+function App() {
   return (
-   <>
-   <h1>Shop App</h1>
-   <ProductPage/>
-   
-   </>
-  )
+    <>
+      <NavBar />
+      <ProductPage />
+    </>
+  );
 }
 
-export default App
+export default App;

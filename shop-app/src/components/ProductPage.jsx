@@ -34,10 +34,10 @@ const ProductPage = () => {
       : products.filter((product) => product.category === selectedCategory);
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="mb-6">
+    <div className="container mx-auto px-4">
+      <div className="sticky top-0 z-10 bg-white py-4 shadow-sm">
         <Select
-          style={{ width: 200 }}
+          style={{ width: "100%", maxWidth: "300px" }}
           value={selectedCategory}
           onChange={setSelectedCategory}
           options={[
